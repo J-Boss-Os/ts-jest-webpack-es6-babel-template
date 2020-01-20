@@ -1,0 +1,35 @@
+{
+  "name": "ts-jest-webpack-es6-babel-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Boss-Os/ts-jest-webpack-es6-babel-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Boss-Os/ts-jest-webpack-es6-babel-template/issues"
+  },
+  "jest": {
+    "testRegex": "/test/*.spec.jsx?$",
+    "moduleNameMapper": {
+      "^common(.*)$": "<rootDir>/plugins/common$1"
+    }
+  },
+  "homepage": "https://github.com/J-Boss-Os/ts-jest-webpack-es6-babel-template#readme",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
