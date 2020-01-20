@@ -25,11 +25,18 @@
   "homepage": "https://github.com/J-Boss-Os/ts-jest-webpack-es6-babel-template#readme",
   "devDependencies": {
     "@types/jest": "^24.9.0",
+    "husky": "^4.0.10",
     "jest": "^24.9.0",
     "ts-jest": "^24.3.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
   }
 }
